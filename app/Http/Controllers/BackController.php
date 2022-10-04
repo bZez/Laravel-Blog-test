@@ -81,6 +81,6 @@ class BackController extends Controller
     public function delete(Post $post)
     {
         $post->delete();
-        return back()->with('success', 'You have successfully delete a post.blade.');
+        return back()->with('success', 'You have successfully delete a post.');
     }
 }

@@ -10,7 +10,6 @@
         <div class="row">
             <div class="col-12">
                 @if (isset($post))
-                    <!-- Le formulaire est géré par la route "posts.update" -->
                     <form method="POST" action="{{ route('posts.update', $post) }}" enctype="multipart/form-data">
                         @method('PUT')
                         @else
@@ -55,5 +54,4 @@
             </div>
         </div>
     </div>
-
 @endsection

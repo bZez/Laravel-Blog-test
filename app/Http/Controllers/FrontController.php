@@ -9,7 +9,9 @@ class FrontController extends Controller
     public function index()
     {
         return view('home', [
-            'posts' => Post::all()->where('status', '=', true)->sortByDesc('created_at'),
+            'posts' => Post::all()
+                ->where('status', '=', true)
+                ->sortByDesc('created_at'),
         ]);
     }
 
