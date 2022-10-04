@@ -11,7 +11,7 @@ class Post extends Model
     use HasFactory;
 
     public const STATUS_PUBLISHED = 1;
-    public const STATUS_DRAFT =0;
+    public const STATUS_DRAFT = 0;
 
     protected $with = ['user'];
     protected $fillable = [
